@@ -31,4 +31,11 @@ class SessionsController extends Controller
         session()->flash('success', '成功登入');
         return redirect()->route('users.show', [$user->id]);
     }
+
+    public function destroy()
+    {
+        Auth::logout();
+        session()->flash('success', '你已成功退出');
+        return redirect('login');
+    }
 }
