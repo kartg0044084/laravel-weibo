@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 use Auth;
 
 class SessionsController extends Controller
@@ -14,17 +15,20 @@ class SessionsController extends Controller
 
     public function store(Request $request)
     {
-        $credentials = $this->validate($request, [
-            'email' => 'required|email|max:255',
-            'password' => 'required'
+        $this->validate($request, [
+            'name' => 'required|max:50',
+            'email' => 'required|email|unique:users|max:255',
+            'password' => 'required|confirmed|min:6'
         ]);
 
-        if(Auth::attempt($credentials)) {
-            session()->flash('success', '成功登入');
-            return redirect()->route('users.show', [Auth::user()]);
-        } else {
-            session()->flash('danger', '你的電子信箱或密碼有錯誤');
-            return redirect()->back()->withInput();
-        }
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => bcrypt($request->password),
+        ]);
+
+        Auth::login($user);
+        session()->flash('success', '成功登入');
+        return redirect()->route('users.show', [$user->id]);
     }
 }
