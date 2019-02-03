@@ -1,3 +1,5 @@
+該專案屬於使用Laravel建構類似新浪微博的應用，其中使用到如HTML、CSS、JavaScript、PHP和Laravel等Web開發相關的基礎知識。並且針對這些基礎的知識點進行延伸擴展，例如：Git工作流程、Gulp前端工作流程、Bootstrap框架基本使用等。
+
 ## 開發Branch與Feature
 
 ## 基礎環境部署
@@ -68,58 +70,3 @@
 - 追蹤和粉絲列表頁面
 - 追蹤按鈕
 - 追蹤使用者動態資訊
-
-## 專業知識點
-
-### 先備知識
-
-- PHP
-- Laravel
-- MVC
-
-### 環境部署
-
-- Sublime Text
-- Command Line
-- VirtualBox
-- Vagrant
-- Homestead
-- Homestead管理腳本
-- Homestead Box
-- Composer
-- Git
-- Github
-- Git Branch
-- SSH
-
-### 建構頁面和優化頁面
-
-- Artisan
-- Bootstrap
-- NPM
-- Yarn
-- SASS
-- Laravel Mix
-- Blade
-- Routes
-
-### Models
-
-- Eloquent ORM
-- DB Migration
-- SequelPro
-- Tinker
-- Gravatar
-
-### 使用者註冊
-
-- RESTful
-- Session
-- jQuery
-
-### 使用者CRUD
-
-- Middleware
-- factory
-- Seeder
-- Faker
