@@ -17,7 +17,7 @@ npm run dev 或 npm run watch-poll
 || 初始化專案|
 |static-pages|配置 .editorconfig|
 ||基礎頁面|
-|filling-layout-style|初始化樣式|
+|filling-layout-style|初始化樣式|
 ||靜態文件瀏覽器緩存問題|
 ||切出header和footer|
 ||命名路由|
@@ -52,10 +52,37 @@ npm run dev 或 npm run watch-poll
 
 |知識點         | 內容         |
 | -------------|-------------|
-|先備知識|PHP、Laravel、MVC|
-|環境部署|Sublime Text、Command Line、VirtualBox、Vagrant、Homestead、Homestead管理腳本、Homestead Box、Composer、Git、Github、Git Branch、SSH|
-|建構頁面和優化頁面|Artisan、Bootstrap、NPM、Yarn、SASS、Laravel Mix、Blade、Routes|
-|Models|Eloquent ORM、DB Migration、SequelPro、Tinker、Gravatar|
+|先備知識|PHP|
+||Laravel|
+||MVC|
+|環境部署|Sublime Text|
+||Command Line|
+||VirtualBox|
+||Vagrant|
+||Homestead|
+||Homestead管理腳本|
+||Homestead Box|
+||Composer|
+||Git|
+||Github|
+||Git Branch|
+||SSH|
+|建構頁面和優化頁面|Artisan|
+||Bootstrap|
+||NPM|
+||Yarn|
+||SASS|
+||Laravel Mix|
+||Blade、Routes|
+|Models|Eloquent ORM|
+||DB Migration|
+||SequelPro|
+||Tinker|
+||Gravatar|
 |使用者註冊|RESTful|
-|Session管理|Session、jQuery|
-|使用者CRUD|Middleware、factory、Seeder、Faker|
+|Session管理|Session|
+||jQuery|
+|使用者CRUD|Middleware|
+||factory|
+||Seeder|
+||Faker|
