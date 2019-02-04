@@ -73,7 +73,8 @@ npm run dev 或 npm run watch-poll
 ||Yarn|
 ||SASS|
 ||Laravel Mix|
-||Blade、Routes|
+||Blade|
+||Routes|
 |Models|Eloquent ORM|
 ||DB Migration|
 ||SequelPro|
