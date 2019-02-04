@@ -27,9 +27,15 @@ class SessionsController extends Controller
         ]);
 
         if (Auth::attempt($credentials, $request->has('remember'))) {
-            session()->flash('success', '歡迎回來');
-            $fallback = route('users.show', Auth::user());
-            return redirect()->intended($fallback);
+            if(Auth::user()->activated) {
+               session()->flash('success', '歡迎回來！');
+               $fallback = route('users.show', Auth::user());
+               return redirect()->intended($fallback);
+           } else {
+               Auth::logout();
+               session()->flash('warning', '你的帳號未激活，請檢查電子郵件中的註冊郵件進行激活。');
+               return redirect('/');
+           }
         } else {
             session()->flash('danger', '很抱歉，你的電子信箱或密碼有錯誤');
             return redirect()->back()->withInput();
