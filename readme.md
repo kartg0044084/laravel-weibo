@@ -36,8 +36,9 @@ npm run dev 或 npm run watch-poll
 ||訪問權限控管|
 ||查看使用者列表|
 ||管理員可刪除使用者|
-|account-activation-password-resets|使用者激活|
+|account-activation-password-resets|使用者Email激活|
 ||重設密碼|
+||使用QQ電子郵件發送|
 |user-statuses|微博 Model|
 ||微博使用者列表|發布微博|
 ||首頁：微博列表|
