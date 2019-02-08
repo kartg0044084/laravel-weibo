@@ -66,7 +66,7 @@ class User extends Authenticatable
         return $this->belongsToMany(User::class, 'followers', 'follower_id', 'user_id');
     }
 
-    public function follow($user_id)
+    public function follow($user_ids)
     {
         if (!is_array($user_ids)) {
             $user_ids = compact('user_ids');
