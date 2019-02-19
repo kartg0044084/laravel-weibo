@@ -2,6 +2,9 @@
 
 該專案屬於使用Laravel建構類似新浪微博的應用，其中使用到如HTML、CSS、JavaScript、PHP和Laravel等Web開發相關的基礎知識。並且針對這些基礎的知識點進行延伸擴展，例如：Git工作流程、Gulp前端工作流程、Bootstrap框架基本使用等。
 
+## 開發筆記
+- https://github.com/webcodedemo/laravel-weibo/wiki
+
 ## 開發規劃
 
 | Baranch      | Feature     |
